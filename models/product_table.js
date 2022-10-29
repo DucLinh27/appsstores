@@ -17,7 +17,7 @@ async function display_products(shop_id,session){
     // pg_conn.end();
     // init the table_string, with the table tag
     let table_string = 
-        `<table border='1'>
+        `<table border='1' class="table table-bordered table-striped">
             <tr>`;
     //display all headers of table
     let num_fields = data.fields.length;
@@ -61,14 +61,14 @@ async function display_products(shop_id,session){
         if(session.shop_id!=0){
             table_string += 
             `<td> 
-                    <button type='submit' name='crud' value='delete'>Delete</button>
-                    <button type='submit' name='crud' value='update'>Update</button>
+                    <button type='button' name='crud' value='delete' class="btn btn-danger">Delete</button>
+                    <button type='button' name='crud' value='update' class="btn btn-success">Update</button>
                 </td>
             </tr></form>`
 
 
         } 
-    }
+    } 
     //since only shop owner can add product, director does not need it
     if(session.shop_id!=0){
         const temp = await pg_conn.query('SELECT * FROM products ORDER BY id DESC');
@@ -94,7 +94,7 @@ async function display_products(shop_id,session){
         }
         table_string += 
         `<td> 
-            <button type='submit' name='crud' value='insert'>Insert</button>
+            <button type='submit' name='crud' value='insert' class="btn btn-primary">Insert</button>
         </td>`
         table_string += '</tr></form>';
 }        

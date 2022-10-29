@@ -4,8 +4,8 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1 class="logins"><%= title %></h1>    
+  <body class="bodylogin">
+    <h1 class="logins" style="margin-top: 120px;"><%= title %></h1>    
     <form action="login" method="post" class="formlogin">
       <!-- <div class="imgcontainer">
         <img src="login.png" alt="Avatar" class="avatar" />
@@ -19,8 +19,9 @@
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Enter Password" id="" required/>
           </div>
-          <button type="submit">Login</button>
+          <button type="submit" class="buttonlogin">Login</button>
       </div>
+      
     </form>
     <p><%= message %></p>
   </body>

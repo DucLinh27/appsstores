@@ -20,16 +20,33 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+/* .table td, .table th {
+  padding: 0;
+  vertical-align: center;
+} */
+.table{
+  border-collapse: initial;
+}
+  
+  @media (min-width: 1025px) {
+  .h-custom-2 {
+  height: 100%;
+  }
+  }
 /* Set a style for all buttons */
 button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+}
+.btn-success{
+ margin-top: 10px;
+}
+.btn-primary{
+  margin-top: 15px;
 }
 
 /* Add a hover effect for buttons */
@@ -56,17 +73,27 @@ img.avatar {
   border-radius: 50%;
 }
 .formlogin{
-  margin: 0 700px;
+  margin: 0 550px;
+  background-color: peachpuff;
+  border-radius: 10px;
+  background-color: unset;
+
+  
 }
 .formtable{
   margin: 0 400px;
   
 }
+.bodylogin{
+  background-image: url("https://images7.alphacoders.com/546/thumb-1920-546508.jpg");
+  background-size: 100%;
+}
+.landingbody{
+  background-image: url("https://baoangiang.com.vn/image/news/2021/20211227/origin/dinh-everest-cao-nha_5807_1640605203.jpg");
+  background-size: 100%;
+}
 .formtable1{
   margin: 0 400px;
-  
-  
-  
 }
 
 a{
@@ -77,18 +104,37 @@ a{
   color: white;
   display: flex;
   margin: 10px 400px;
-  padding-left: 465px;
+  padding-left: 290px;
 }
 .h1p{
   text-align: center;
+  color: white;
+}
+.h1ps{
+  text-align: center;
+  color: black;
+}
+.formgetstart{
+  padding: 0 600px;
+  border: none;
+}
+.buttonlogin{
+  margin-top: 20px;
+  border-radius: 10px;
 }
 /* Add padding to containers */
 .container {
   padding: 16px;
 }
 .containers{
-  margin: 20px 40px;
+  margin: 20px 20px;
+  color: rgb(255, 255, 255);
   
+  font-size: large;
+
+}
+input{
+  border-radius: 10px;
 }
 
 /* The "Forgot password" text */
@@ -98,6 +144,7 @@ span.psw {
 }
 .logins{
   text-align: center;
+  color: white;
 }
 
 /* Change styles for span and cancel button on extra small screens */
