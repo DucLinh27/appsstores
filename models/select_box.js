@@ -5,8 +5,8 @@ async function gen_box(selectValue=-1){
                       JOIN users ON shops.id = users.shop_id`;
   const data = await pg_conn.query(shops_query);
   let box_string = `
-    <form action="/admin/select_box" method="post">
-      <label for="shop">Choose a shop:</label>
+    <form action="/admin/select_box" method="post" style="boder: none;">
+      <label for="shop style="font-size: 0.5cm;">Choose a shop:</label>
         <select name="shop" id="shop">
             <option value=0 ${selectValue==-1?` selected`:''}>All shops</option>`;
   let select_items = data.rowCount;
@@ -16,7 +16,7 @@ async function gen_box(selectValue=-1){
     }
   }
   box_string += `</select>
-    <input type="submit" value="view">
+    <input type="submit" value="view" class="btn btn-secondary">
   </form>`;
   // console.log(data);
   return box_string;

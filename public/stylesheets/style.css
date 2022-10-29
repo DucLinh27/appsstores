@@ -8,7 +8,7 @@ a {
 }
 /* Bordered form */
 form {
-  border: 3px solid #f1f1f1;
+  /* border: 3px solid #f1f1f1; */
 }
 
 /* Full-width inputs */
@@ -122,6 +122,7 @@ a{
   margin-top: 20px;
   border-radius: 10px;
 }
+
 /* Add padding to containers */
 .container {
   padding: 16px;
@@ -145,6 +146,11 @@ span.psw {
 .logins{
   text-align: center;
   color: white;
+}
+.table td, table th {
+  padding: none;
+  vertical-align: none;
+  z-index: 1;
 }
 
 /* Change styles for span and cancel button on extra small screens */
