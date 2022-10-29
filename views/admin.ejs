@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 class="h1p"><%= title %></h1>
+    <p class="h1p">Welcome <%= name %> </p>
+    <div class="formtable1">
+        <%- select_box %>
+        <%- table_string %>
+    </div>
+    <a class="logout" href="http://localhost:3000/logout" >Logout</a>
+
+  </body>
+  <script>
+    window.setInterval(() => {
+  window.location.reload();
+}, 10000);
+  </script>
+</html>
+
+
