@@ -61,12 +61,10 @@ async function display_products(shop_id,session){
         if(session.shop_id!=0){
             table_string += 
             `<td> 
-                    <button type='button' name='crud' value='delete' class="btn btn-danger">Delete</button>
-                    <button type='button' name='crud' value='update' class="btn btn-success">Update</button>
+                    <button type='submit' name='crud' value='delete' class='btn btn-danger'>Delete</button>
+                    <button type='submit' name='crud' value='update' class='btn btn-success'>Update</button>
                 </td>
             </tr></form>`
-
-
         } 
     } 
     //since only shop owner can add product, director does not need it
@@ -99,9 +97,6 @@ async function display_products(shop_id,session){
         table_string += '</tr></form>';
 }        
     table_string += '</table>'
-    // console.log("DATA: -->")
-    // console.log(data)
-    // console.log(table_string)
     return table_string;
     
 }
