@@ -87,10 +87,12 @@ img.avatar {
 .bodylogin{
   background-image: url("https://images7.alphacoders.com/546/thumb-1920-546508.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 .landingbody{
   background-image: url("https://baoangiang.com.vn/image/news/2021/20211227/origin/dinh-everest-cao-nha_5807_1640605203.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 .formtable1{
   margin: 0 400px;
